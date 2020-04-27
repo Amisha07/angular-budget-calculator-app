@@ -1,0 +1,28 @@
+$green: green;
+$red: red;
+
+.section-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+    .div-item{
+      width: 650px;
+      
+      h4{
+        text-transform: uppercase;
+      }
+
+      .income{
+        h4{
+          color: lighten($green, $amount: 12%);
+        }
+      }
+
+      .expenses{
+        h4{
+          color: lighten($red, $amount: 12%);
+        }
+      }
+    }
+}
