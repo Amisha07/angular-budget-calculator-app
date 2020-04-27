@@ -7,11 +7,11 @@ import { HelloComponent } from './hello.component';
 import { BudgetCalculatorComponent } from './budget-calculator/budget-calculator.component';
 import { AddItemComponent } from './add-item/add-item.component';
 import { ListItemComponent } from './list-item/list-item.component';
-import { ItemCardComponent } from './item-list/item-card/item-card.component';
+import { CardItemComponent } from './list-item/card-item/item-card.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, BudgetCalculatorComponent, AddItemComponent, ListItemComponent, ItemCardComponent ],
+  declarations: [ AppComponent, HelloComponent, BudgetCalculatorComponent, AddItemComponent, ListItemComponent, CardItemComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
