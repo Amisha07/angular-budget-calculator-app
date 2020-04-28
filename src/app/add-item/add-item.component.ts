@@ -9,11 +9,20 @@ import { Item } from '../shared/models/item.model'
 })
 export class AddItemComponent implements OnInit {
 
-  @Input()item: Item = new Item('', null);
+  @Input()item: Item;  // new Item('', null)
   @Output() formSubmit: EventEmitter<Item> = new EventEmitter<Item>();
+
+  isNewItem: boolean;
+
   constructor() { }
 
   ngOnInit() {
+    if (this.item) {
+      this.isNewItem = false;
+    } else {
+      this.isNewItem = true;
+      this.item = new Item('', null);
+    }
   }
 
   onSubmit(form: NgForm){

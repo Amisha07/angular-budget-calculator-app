@@ -7,7 +7,11 @@
       <div class="input-group mb-3">
         <input type="text" class="form-control" required placeholder="Description" aria-label="Description" aria-describedby="basic-addon2" name="description" [ngModel]="item.description">
         <div class="input-group-append">
-          <button class="btn btn-outline-primary" type="submit" [disabled]="itemForm.invalid">Add</button>
+          <button class="btn" type="submit" [ngClass]="{ 'btn-outline-primary': isNewItem, 'btn-outline-success': !isNewItem}" [disabled]="itemForm.invalid">
+            <span *ngIf="isNewItem">Add</span>
+            <span *ngIf="!isNewItem">Save</span>
+
+          </button>
         </div>
       </div>
     </div>

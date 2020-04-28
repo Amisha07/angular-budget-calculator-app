@@ -15,7 +15,7 @@ $red: #dc3545;
 .header{
   display: flex;
   height: 250px;
-  background: #f8f9fa;
+  background: rgba(0,0,0,.1);
   justify-content: center;
   align-items: center;
   h4{
@@ -24,7 +24,7 @@ $red: #dc3545;
     &.green{
       color: lighten($green, $amount: 12%);
     }
-    &.ref{
+    &.red{
       color: lighten($red, $amount: 12%);
     }
 
