@@ -1,5 +1,5 @@
-$green: green;
-$red: red;
+$green: #28a745;
+$red: #dc3545;
 
 .navbar {
   display: flex;
@@ -15,7 +15,7 @@ $red: red;
 .header{
   display: flex;
   height: 250px;
-  background: lightgrey;
+  background: #f8f9fa;
   justify-content: center;
   align-items: center;
   h4{

@@ -1,3 +1,14 @@
-<p>
-card-item works!
-</p>
+<div class="card-item">
+  <div class="card">
+    <div class="item" [ngClass]="{ 'income': isIncome, 'expenses': !isIncome}">
+    <div class="description"><p>Header</p></div>
+    <div class="amount"><p>100</p></div>
+    </div>
+  </div>
+
+  <div class="x-icon-button">
+   <!-- <button type="button" class="close" aria-label="Close"> -->
+      <span aria-hidden="true">&times;</span>
+    <!-- </button> -->
+  </div>
+</div>

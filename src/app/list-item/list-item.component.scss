@@ -1,5 +1,5 @@
-$green: green;
-$red: red;
+$green: #28a745;
+$red: #dc3545;
 
 .section-item{
   display: flex;
@@ -15,13 +15,13 @@ $red: red;
 
       .income{
         h4{
-          color: lighten($green, $amount: 12%);
+          color: $green;
         }
       }
 
       .expenses{
         h4{
-          color: lighten($red, $amount: 12%);
+          color: $red;
         }
       }
     }

@@ -1,11 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-card-item',
+  selector: 'card-item',
   templateUrl: './card-item.component.html',
-  styleUrls: ['./card-item.component.css']
+  styleUrls: ['./card-item.component.scss']
 })
 export class CardItemComponent implements OnInit {
+
+  @Input() isIncome: boolean = true;
 
   constructor() { }
 

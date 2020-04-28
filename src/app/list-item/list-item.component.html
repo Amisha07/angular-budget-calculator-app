@@ -1,15 +1,18 @@
-<section class="section-item">
+<section class="section-item" style="margin: 10px;">
   <div class="contaier div-item">
     <div class="row">
       <div class="col-6 income">
         <h4>Income</h4>
-
+        <card-item [isIncome]="true"></card-item>
+        <card-item [isIncome]="true"></card-item>
+        <card-item [isIncome]="true"></card-item>
         </div>
       <div class="col-6 expenses">
         <h4>Expenses</h4>
+        <card-item [isIncome]="false"></card-item>
+        <card-item [isIncome]="false"></card-item>
 
         </div>
     </div>
   </div>
 </section>
-<item-card></item-card>
