@@ -8,8 +8,11 @@
 
 <section class="section-content">
   <div class="div-content">
-    <add-item></add-item>
+    <add-item (formSubmit)="addItem($event)"></add-item>
   </div>
 </section>
 <hr style="margin: 0; border: 2px solid rgba(0,0,0,.1)">
-<list-item></list-item>
+
+<list-item 
+[Items]="Items"
+(delete)="deleteItem($event)"></list-item>

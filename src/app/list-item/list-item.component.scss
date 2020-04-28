@@ -5,10 +5,10 @@ $red: #dc3545;
   display: flex;
   justify-content: center;
   align-items: center;
-
+ 
     .div-item{
       width: 650px;
-      
+       min-height: 250px;
       h4{
         text-transform: uppercase;
       }
